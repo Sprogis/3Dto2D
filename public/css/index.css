@@ -1,0 +1,87 @@
+.funStuff {
+    width: 100wv;
+    height: 4%;
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+}
+.funStuff form{
+    height: 15%;
+}
+.foo {
+    margin-left: 1vw;
+}
+
+input, label {
+    display: block;
+}
+
+div.lowerDiv {
+    float: left;
+    margin-right: 3%;
+    margin-left: 1%;
+    width: 20%;
+}
+
+input.upperRow {
+    margin-bottom: 5%;
+    
+}
+
+#c {
+    width: 33vw;
+    height: 33vw;
+}
+
+#materials {
+    overflow-y: scroll;
+    height: 80%;
+    width: 42vw;
+    padding-right: 1vw;
+    padding-left: 1vw;
+}
+
+td {
+    padding-bottom: 2%;
+    width: 50vw;
+    padding-top: 2%;
+    padding-left: 2%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: solid thin;
+}
+
+#scale {
+    width: 7vw;
+}
+
+#animDiv {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 80%;
+    padding-top: 1vw;
+    width:20vw;
+
+}
+
+#anim label{
+    width: 20vw;
+    padding-top: 3%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#anim input {
+    display: none;
+}
+
+#anim input:checked + label {
+
+    color: white;
+    background: lightblue;
+}

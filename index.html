@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>Title</title>
+    </head>
+    
+    <body>
+        <div class="funStuff">  
+            <button class="foo" id="sheet" value="false" onclick="bajsman()">Creates Animation Spritesheet</button>
+            <form method="POST"enctype="multipart/form-data" action="/submit-form">
+                <input class = "foo" style="float: left" type="file" name="document" multiple="multiple"  webkitdirectory="" mozdirectory=""/>
+                <input style="float: left" type="submit" value="Upload"/>
+            </form>
+        </div>
+ 
+        
+        
+  
+        <div style="float:right">
+            <div class="lowerDiv">
+                <label >width</label>
+                <input id="width" class="upperRow" type="number" min="0" max="640" value="128" oninput="updateHTMLValues(id, value)">   
+            </div>
+
+            <div class="lowerDiv">
+                <label >height</label>
+                <input id="height" class="upperRow" type="number" min="0" max="640" value="128" oninput="updateHTMLValues(id, value)">
+            </div>
+            
+            <div class="lowerDiv">
+                <label >dx</label>
+                <input id="dx" class="upperRow" type="number" min="-100" max="100" step="0.1" value="0" oninput="updateHTMLValues(id, value)">
+            </div>
+
+            <div class="lowerDiv">
+                <label >dy</label>
+                <input id="dy" class="upperRow" type="number" min="-100" max="100" step="0.1" value="0" oninput="updateHTMLValues(id, value)" >
+            </div>
+            <br />
+
+            <canvas id="c" style="
+            image-rendering: optimizeSpeed;
+            image-rendering: -moz-crisp-edges;
+            image-rendering: -o-crisp-edges;
+            image-rendering: -webkit-optimize-contrast;
+            -ms-interpolation-mode: nearest-neighbor;
+            image-rendering: pixelated;
+            image-rendering: optimize-contrast;
+            border:1px solid #000000;
+            background:url(
+            data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAIElEQVQoU2NkQAPPnj37jyzESAcF6HZKSUmhWMtIewUAQFYezQVp1O0AAAAASUVORK5CYII=
+            ) repeat;
+            ">
+            </canvas>
+
+
+            <br />
+            <div class="lowerDiv">
+                <label >rx</label>
+                <input id="rx" class="lowerRow" type="number" min="-360" max="360" value="0" oninput="updateHTMLValues(id, value)">
+            </div>
+            <div class="lowerDiv">
+                <label >ry</label>
+                <input id="ry" class="lowerRow" type="number" min="-360" max="360" value="0" oninput="updateHTMLValues(id, value)">
+            </div>
+            <div class="lowerDiv">
+            <label >rz</label>
+            <input id="rz" class="lowerRow" type="number" min="-360" max="360" value="0" oninput="updateHTMLValues(id, value)">
+                </div>
+                <div class="lowerDiv">
+            <label >scale</label>
+            <input id="scale" class="lowerRow" type="number" min="0.0" step="0.1" value="1">
+            </div>
+            <br />
+        </div>
+        <div id="materials" style="float:right">
+            <table>
+                <tbody id="tableboy">
+                    <tr>
+                        <td><b>Name</b></td>
+                        <td><b>Color</b></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+        <div id="animDiv" style="float: right">
+            <form id="anim">
+                
+                <input id="radio1" type="radio" name="animation" value="-1" checked="true">
+                <label for="radio1">No animation</label>
+            </form>
+        </div>
+        <script src="js/three.js"></script>
+        <script src="js/GLTFLoader.js"></script>
+        <script src="js/OrbitControls.js"></script>
+
+        <script src="/app"></script>
+    </body>
+            <link rel="stylesheet" href="css/index.css">
+</html>
